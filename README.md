@@ -1,12 +1,12 @@
 # Linphone4Android
-LinPhone是一个网络电话或者IP语音电话（VOIP），是一款遵循GPL的开源的网络视频电话系统，其主要如下：使用linphone，我们可以在互联网上随意的通信，通过语音、视频、即时文本消息。linphone使用SIP协议，是一个标准的开源网络电话系统，你能将linphone与任何基于SIP的VoIP运营商连接起来，包括我们自己开发的免费的基于SIP的Audio/Video服务器。LinPhone是一款自由软件（或者开源软件），你可以随意的下载和在LinPhone的基础上二次开发。LinPhone是可用于桌面电脑：Linux, Windows, MacOSX 以及移动设备：Android, iPhone, Blackberry.
+LinPhone은 VoIP 또는 VoIP (Voice over IP)로, GPL을 따르는 개방형 소스 네트워크 비디오 전화 시스템이며, 그 주요 이유는 다음과 같습니다. . Linphone은 SIP 프로토콜을 사용하며 표준 오픈 소스 VoIP 시스템으로, 무료 SIP 기반 오디오 / 비디오 서버를 포함한 모든 SIP 기반 VoIP 통신 업체에 linphone을 연결할 수 있습니다. LinPhone은 LinPhone을 기반으로 다운로드하고 다시 개발할 수있는 무료 소프트웨어 (또는 오픈 소스 소프트웨어)입니다. LinPhone은 데스크톱 컴퓨터 (Linux, Windows, MacOSX 및 모바일 장치 : Android, iPhone, Blackberry)에 사용할 수 있습니다.
 
-# 接口
-可以将项目作为一个Library，进行二次开发，根据业务需求来修改源码。
+# 인터페이스
+이 프로젝트는 2 차 개발을위한 라이브러리로 사용될 수 있으며 비즈니스 요구에 따라 소스 코드를 수정할 수 있습니다.
 
-## 登录
+## 로그인
 ``` java
-// 开启线程登录
+// 스레드 로그인 열기
 ServiceWaitThread mThread = new ServiceWaitThread();
 mThread.start();
 
@@ -67,7 +67,7 @@ private class ServiceWaitThread extends Thread {
 
 ```
 
-## 呼出
+## 콜연결
 ``` java
 
 private void callOutgoing(String number) {
@@ -87,4 +87,4 @@ private void callOutgoing(String number) {
 
 ```
 
-**注：该项目只提供登录、呼出两个接口，可以会涉及到修改源码部分来适应，望开发者自己去扩展。**
+**참고 :이 프로젝트는 로그인과 콜연결을 위한 두 가지 인터페이스만 제공하며, 적응하기 위해 소스 코드를 수정해야 할 수도 있으므로 개발자가 이를 확장 할 수 있기를 바랍니다.。**
